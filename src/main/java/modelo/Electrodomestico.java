@@ -5,23 +5,23 @@ public class Electrodomestico {
 	private int id;
 	private String nombre;
 	private String falla;
-	private Cliente cliente_id;
+	private Cliente cliente;
 	
 	public Electrodomestico() {
 		
 	}
 	
-	public Electrodomestico(String nombre, String falla, Cliente cliente_id) {
+	public Electrodomestico(String nombre, String falla, Cliente cliente) {
 		this.nombre 	= nombre;
 		this.falla 		= falla;
-		this.cliente_id = cliente_id;
+		this.cliente    = cliente;
 	}
 	
-	public Electrodomestico(int id, String nombre, String falla, Cliente cliente_id) {
+	public Electrodomestico(int id, String nombre, String falla, Cliente cliente) {
 		this.id 		= id;
 		this.nombre 	= nombre;
 		this.falla 		= falla;
-		this.cliente_id = cliente_id;
+		this.cliente    = cliente;
 
 	}
 
@@ -49,12 +49,12 @@ public class Electrodomestico {
 		this.falla = falla;
 	}
 
-	public Cliente getCliente_id() {
-		return cliente_id;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setCliente_id(Cliente cliente_id) {
-		this.cliente_id = cliente_id;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	public void setTelefono(String telefonoCliente) {

@@ -6,7 +6,7 @@ public class OrdenDeTrabajo {
 	
 	private int id;
 	private String estado;
-	private Electrodomestico electrodomestico_id;
+	private Electrodomestico electrodomestico;
 	private LocalDate fechaSolicitud;
 	private LocalDate fechaEntrega;
 	
@@ -14,19 +14,19 @@ public class OrdenDeTrabajo {
 		
 	}
 
-	public OrdenDeTrabajo(String estado, LocalDate fechaSolicitud, LocalDate fechaEntrega, Electrodomestico electrodomestico_id) {
+	public OrdenDeTrabajo(String estado, LocalDate fechaSolicitud, LocalDate fechaEntrega, Electrodomestico electrodomestico) {
 		this.estado					 = estado;
 		this.fechaSolicitud 		 = fechaSolicitud;
 		this.fechaEntrega 			 = fechaEntrega;
-		this.electrodomestico_id 	 = electrodomestico_id;
+		this.electrodomestico    	 = electrodomestico;
 	}
 
-	public OrdenDeTrabajo(int id, String estado, LocalDate fechaSolicitud, LocalDate fechaEntrega, Electrodomestico electrodomestico_id) {
+	public OrdenDeTrabajo(int id, String estado, LocalDate fechaSolicitud, LocalDate fechaEntrega, Electrodomestico electrodomestico) {
 		this.id 					 = id;
 		this.estado					 = estado;
 		this.fechaSolicitud 		 = fechaSolicitud;
 		this.fechaEntrega 			 = fechaEntrega;
-		this.electrodomestico_id 	 = electrodomestico_id;
+		this.electrodomestico   	 = electrodomestico;
 	}
 	
 	public OrdenDeTrabajo(int id, String estado) {
@@ -42,12 +42,12 @@ public class OrdenDeTrabajo {
 		this.id = id;
 	}
 
-	public Electrodomestico getElectrodomestico_id() {
-		return electrodomestico_id;
+	public Electrodomestico getElectrodomestico() {
+		return electrodomestico;
 	}
 
-	public void setElectrodomestico_id(Electrodomestico electrodomestico_id) {
-		this.electrodomestico_id = electrodomestico_id;
+	public void setElectrodomestico(Electrodomestico electrodomestico) {
+		this.electrodomestico = electrodomestico;
 	}
 
 	public LocalDate getFechaSolicitud() {
@@ -58,12 +58,12 @@ public class OrdenDeTrabajo {
 		this.fechaSolicitud = fechaSolicitud;
 	}
 
-	public LocalDate getFechaActualizacionOrden() {
+	public LocalDate getFechaEntrega() {
 		return fechaEntrega;
 	}
 
-	public void setFechaActualizacionOrden(LocalDate fechaActualizacionOrden) {
-		this.fechaEntrega = fechaActualizacionOrden;
+	public void setFechaEntrega(LocalDate fechaEntrega) {
+		this.fechaEntrega = fechaEntrega;
 	}
 
 	public String getEstado() {
@@ -74,9 +74,5 @@ public class OrdenDeTrabajo {
 		this.estado = estado;
 	}
 
-	public Object getFechaEntrega() {
-		
-		return null;
-	}
 
 }
